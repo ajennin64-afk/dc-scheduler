@@ -394,20 +394,20 @@
   background-size: contain; }
 
 /******************** END HELP COLORS ***************************/
-
-/* === Custom Logo Override === */
-.room__container::before {
+/* ===== Custom Logo Placement ===== */
+body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 50%;
-  right: 20px;         /* adjust horizontal position */
+  right: 20px;
   transform: translateY(-50%);
+  width: 150px;   /* adjust size if needed */
+  height: auto;
   background: url("logo.png") no-repeat center center;
   background-size: contain;
-  width: 150px;        /* adjust logo width */
-  height: 150px;       /* adjust logo height */
-  opacity: 1;          /* keep it fully visible */
-  pointer-events: none; /* don't block touches */
+  pointer-events: none; /* makes sure the logo doesn't block touch interactions */
 }
+
+
 
 
